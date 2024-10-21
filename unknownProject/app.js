@@ -54,19 +54,19 @@ window.addEventListener("mousemove", (event) => {
 
   // Change color of the intersected shape
   if (intersects.length > 0) {
-    intersects[0].object.material.color.set(0xffffff); // Change color on hover
+    intersects[0].object.material.color.set(0x000); // Change color on hover
   }
 });
 
 // Camera position
-camera.position.z = 5;
+camera.position.z = 8;
 
 // Animation loop
 function animate() {
   requestAnimationFrame(animate);
 
   shapes.forEach((shape, index) => {
-    shape.rotation.x += 0.01 + index * 0.005; // Rotate each shape at different speeds
+    shape.rotation.x += 0.01 + index * 0.0005; // Rotate each shape at different speeds
     shape.rotation.y += 0.01 + index * 0.005; // Rotate each shape at different speeds
   });
 
