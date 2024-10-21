@@ -82,3 +82,4 @@ window.addEventListener("resize", () => {
 
 // Start animation
 animate();
+// end of the projectt
