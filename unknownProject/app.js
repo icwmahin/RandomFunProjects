@@ -69,10 +69,8 @@ function animate() {
     shape.rotation.x += 0.01 + index * 0.0005; // Rotate each shape at different speeds
     shape.rotation.y += 0.01 + index * 0.005; // Rotate each shape at different speeds
   });
-
   renderer.render(scene, camera);
 }
-
 // Event listener for window resize
 window.addEventListener("resize", () => {
   camera.aspect = window.innerWidth / window.innerHeight;
